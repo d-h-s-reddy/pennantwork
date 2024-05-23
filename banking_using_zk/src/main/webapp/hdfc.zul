@@ -1,0 +1,49 @@
+<?page title="hdfc" contentType="text/html;charset=UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+     <div style=" display:flex; flex-direction:column; align-items: center; padding:10px; width:100%;">
+        <label value="HDFC Bank" style="font-weight: bold; font-size:40px; color:blue;"/>
+        <grid width="80%" style="margin-top:20px; margin-bottom:20px;">
+            <!-- Define columns -->
+            <columns>
+                <column label="Sno"/>
+                <column label="Loan Type"/>
+                <column label="Duration"/>
+                <column label="Amount"/>
+                <column label="Interest"/>
+            </columns>
+            
+            <!-- Populate rows -->
+            <rows>
+                <row>
+                    <label value="1"/>
+                    <label value="Housing Loan"/>
+                    <label value="5"/>
+                    <label value="90% of the property's market value"/>
+                    <label value=" 6.70%"/>
+                </row>
+                <row>
+                    <label value="2"/>
+                    <label value="Personal Loan"/>
+                    <label value="1-5 years"/>
+                    <label value="₹40 Lakhs"/>
+                    <label value="10.50% p.a. to 21.00% p.a"/>
+                </row>
+                 <row>
+                    <label value="3"/>
+                    <label value="Car Loan"/>
+                    <label value="1-7 years"/>
+                    <label value="Up to 100% of the car's on-road price."/>
+                    <label value=" 7.50%"/>
+                </row>
+                <row>
+                    <label value="4"/>
+                    <label value="Education Loan"/>
+                    <label value="5-15 years"/>
+                    <label value="Up to ₹20 Lakhs for studies"/>
+                    <label value="9.50%"/>
+                </row>
+            </rows>
+        </grid>
+        <label value="Best loan for this bank is Housing loan" style="font-weight:bold"></label>
+    </div>
+</zk>

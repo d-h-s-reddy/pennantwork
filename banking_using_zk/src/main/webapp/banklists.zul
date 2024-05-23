@@ -1,0 +1,39 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+    <style>
+        @import url("style.css");
+    </style>
+     
+   <listbox sclass="custom-listbox">
+        <listhead sclass="custom-listhead">
+            <listheader label="Banks list" />
+        </listhead>
+        <listitem>
+            <listcell>
+                <button label="HDFC" sclass="my-button" onClick='h("hdfc.zul")'/>
+            </listcell>
+        </listitem>
+        <listitem>
+            <listcell>
+                <button label="SBI" sclass="my-button" onClick='h("sbi.zul")'/>
+            </listcell>
+        </listitem>
+        <listitem>
+            <listcell>
+                <button label="AXIS" sclass="my-button" onClick='h("axis.zul")' />
+            </listcell>
+        </listitem>
+        <listitem>
+            <listcell>
+                <button label="UNION" sclass="my-button" />
+            </listcell>
+        </listitem>
+        <listitem>
+            <listcell>
+                <button label="ICICI" sclass="my-button" />
+            </listcell>
+        </listitem>
+    </listbox>
+    
+   
+</zk>
