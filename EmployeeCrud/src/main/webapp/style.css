@@ -1,0 +1,83 @@
+@charset "ISO-8859-1";
+
+#d0{
+	 background:#ff0080;
+	 color:white;
+}
+#d1{
+	width:100%;
+
+}
+
+#background {
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+
+    justify-content: center;
+
+}
+th{
+	color:white;
+	background:#ff0080;
+	justify-content: center;
+}
+td{
+  padding:5px; 
+  color:white;
+  text-align: center;
+}
+table {
+	margin-top:30px;
+    border-collapse: separate; /* Ensure border-spacing property works */
+    border-spacing: 2px; /* Add spacing between cells */
+}
+
+#first,#prev,#last,#next,#add,#edit,#del,#save,#clear,#exit,#frst{
+	padding:5px;
+	margin:5px;
+	background:#ffd7dd;
+	
+	border-radius:10px;
+    border-width: 2px;
+    padding: 8px ;
+    font-size: 16px;
+    border-color: rgb(78, 78, 78);
+    transition: transform 0.1s ease; 
+    transform: translateZ(0); 
+}
+#first:hover,#prev:hover,#last:hover,#next:hover,#add:hover,#edit:hover,#del:hover,#save:hover,#clear:hover,#exit:hover,#frst:hover{
+ /* Scale up the button on hover */
+    background:#ff0080;
+    border-width: 1px;
+    font-weight: normal;
+    font-size: 16px;
+    transform: scale(1.17);
+    color: white;
+    }
+.lbl1 {
+    color: white;
+    font-size: 16px;
+ 
+    text-align: left; /* Align the text to the left */
+}
+
+.lbl2{
+	color:white;
+	font-size:16px;
+
+}
+/* Hover effect */
+tr:hover td{
+    background-color: lightpink;
+    color:black;
+}
+
+/* Click effect */
+tr.clicked {
+    background-color: #ff0080 !important;
+    color:black;
+}
+
