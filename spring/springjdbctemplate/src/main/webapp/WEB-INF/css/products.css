@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+.maindiv{	
+    text-align: center;
+}  
+/* Center the table */
+.tb {
+    margin: 0 auto; /* Center horizontally */
+    border-collapse: collapse; /* Optional: Remove space between table cells */
+    width: 80%; /* Set a fixed width */
+}
+
+/* Style the table headers */
+.tb th {
+    background-color: #f2f2f2;
+    padding: 12px;
+    text-align: center; /* Align text to the left within headers */
+    border-bottom: 1px solid #ddd; /* Add bottom border */
+    
+}
+
+/* Style the table data cells */
+.tb td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Add bottom border */
+}
+
+/* Style alternate rows */
+.tb tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+/* Hover effect */
+.tb tr:hover {
+    background-color: #f2f2f2; /* Darker background on hover */
+}
+.imagedata{
+	width:100px;
+	height:100px;
+}
+
