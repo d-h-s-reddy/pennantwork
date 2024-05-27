@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Employee</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+       <form id="employeedata">
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname"><br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname"><br>
+        <label for="empname">Gender:</label>
+        <input type="radio" name="gender" id="gender" value="male">Male
+        <input type="radio" name="gender" id="gender" value="female">Female<br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="phno">Phone no</label>
+        <input type="text" name="phno" id="phno"><br>
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="submit">
+       </form>
+
+       <script>
+         $(document).ready(function(){
+
+            $("#employeedata").submit(function(event){
+                event.preventDefault(); 
+
+                var formdata={
+                    FirstName:$("#firstname").val(),
+                    LastName:$("#lastname").val(),
+                    Gender:$("#gender").val(),
+                    Email:$("#email").val(),
+                    Phno:$("#phno").val(),
+                    Address:$("#address").val()
+                }
+                
+                $.ajax({
+                    url:"localhost:8081/CrudOperationsSpring/addempl",
+                    type:"POST",
+                    contenttYPE:"application/json",
+                    data:JSON.stringify(formdata),
+                    success:function(data){
+                        alert("data added successfully");
+                    },
+                    error:function(xhr, textStatus, errorThrown) {
+                        console.error("There was a problem with the AJAX request:", errorThrown);
+                    }
+                });
+            });
+         });
+        
+       </script>
+
+    </body>
+</html>
